@@ -1,0 +1,90 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>whack-a-mole</title>
+	<!-- link to jquery commands file saved to make mac -->
+	<script src="jquery-1.11.1.js"></script>
+	
+	<!-- css classes -->
+	<style type="text/css">
+
+		body{
+			text-align: center;
+		}
+
+		.game-board{
+			width: 640px;
+			text-align: center;
+			margin-left: 220px;
+			padding: 50px;
+		}
+
+		.mole{
+			display: none;
+			text-align: center;
+		}
+		.mole-hole{
+			width: 169px;
+			height: 129px;
+			padding: 20px;
+			float: left;
+			border: 1px solid black;
+			text-align: center;
+		}
+
+	</style>
+</head>
+
+
+
+<body>
+	<h1>Whack-a-mole</h1>
+	<button id="start-button">START</button>
+
+	<div class="game-board">
+
+		<div class="mole-hole" id="1">
+			<img src="/Users/macpro/whackamole.dev/public/index.html/mole.jpeg" alt="whack-a-mole" class="mole">
+		</div>
+		<div class="mole-hole" id="2">
+			<img src="/Users/macpro/whackamole.dev/public/index.html/mole.jpeg" alt="whack-a-mole" class="mole">
+		</div>
+		<div class="mole-hole" id="3">
+			<img src="/Users/macpro/whackamole.dev/public/index.html/mole.jpeg" alt="whack-a-mole" class="mole">
+		</div>
+		<div class="mole-hole" id="4">
+			<img src="/Users/macpro/whackamole.dev/public/index.html/mole.jpeg" alt="whack-a-mole" class="mole">
+		</div>
+		<div class="mole-hole" id="5">
+			<img src="/Users/macpro/whackamole.dev/public/index.html/mole.jpeg" alt="whack-a-mole" class="mole">
+		</div>
+		<div class="mole-hole" id="6">
+			<img src="/Users/macpro/whackamole.dev/public/index.html/mole.jpeg" alt="whack-a-mole" class="mole">
+		</div>
+		<div class="mole-hole" id="7">
+			<img src="/Users/macpro/whackamole.dev/public/index.html/mole.jpeg" alt="whack-a-mole" class="mole">
+		</div>
+		<div class="mole-hole" id="8">
+			<img src="/Users/macpro/whackamole.dev/public/index.html/mole.jpeg" alt="whack-a-mole" class="mole">
+		</div>
+		<div class="mole-hole" id="9">
+			<img src="/Users/macpro/whackamole.dev/public/index.html/mole.jpeg" alt="whack-a-mole" class="mole">
+		</div>
+		
+
+	</div>
+
+	<script>
+		var holes = $('.mole-hole');
+
+			$('#start-button').click(function() {
+				$('.mole').fadeIn(600);
+		});
+
+        $('.mole').click(function() {
+            $(this).fadeOut(500);
+          });
+
+	</script>
+</body>
+</html>
